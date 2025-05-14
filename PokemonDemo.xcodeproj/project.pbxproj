@@ -14,6 +14,13 @@
 		FA7AF9D42DD3B46600CA668D /* PokemonDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9D32DD3B46600CA668D /* PokemonDemoTests.swift */; };
 		FA7AF9DE2DD3B46600CA668D /* PokemonDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9DD2DD3B46600CA668D /* PokemonDemoUITests.swift */; };
 		FA7AF9E02DD3B46600CA668D /* PokemonDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9DF2DD3B46600CA668D /* PokemonDemoUITestsLaunchTests.swift */; };
+		FA7AF9F02DD3B6EA00CA668D /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9EF2DD3B6EA00CA668D /* PokemonResponse.swift */; };
+		FA7AF9F22DD3B80F00CA668D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9F12DD3B80F00CA668D /* DetailView.swift */; };
+		FA7AF9F42DD3B84F00CA668D /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9F32DD3B84F00CA668D /* PokemonViewModel.swift */; };
+		FA7AF9FD2DD3C13C00CA668D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AF9FC2DD3C13C00CA668D /* Constants.swift */; };
+		FA7AFA002DD3D49200CA668D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA7AF9FF2DD3D49200CA668D /* Alamofire */; };
+		FA7AFA022DD3E41700CA668D /* PokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7AFA012DD3E41700CA668D /* PokemonDetailViewModel.swift */; };
+		FA8B58052DD50E2B00BDD4E1 /* StatProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B58042DD50E2B00BDD4E1 /* StatProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,12 @@
 		FA7AF9D92DD3B46600CA668D /* PokemonDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7AF9DD2DD3B46600CA668D /* PokemonDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDemoUITests.swift; sourceTree = "<group>"; };
 		FA7AF9DF2DD3B46600CA668D /* PokemonDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA7AF9EF2DD3B6EA00CA668D /* PokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
+		FA7AF9F12DD3B80F00CA668D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FA7AF9F32DD3B84F00CA668D /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		FA7AF9FC2DD3C13C00CA668D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA7AFA012DD3E41700CA668D /* PokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModel.swift; sourceTree = "<group>"; };
+		FA8B58042DD50E2B00BDD4E1 /* StatProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7AFA002DD3D49200CA668D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +93,7 @@
 				FA7AF9D22DD3B46600CA668D /* PokemonDemoTests */,
 				FA7AF9DC2DD3B46600CA668D /* PokemonDemoUITests */,
 				FA7AF9BF2DD3B46500CA668D /* Products */,
+				FA7AF9FE2DD3D49200CA668D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +112,10 @@
 			children = (
 				FA7AF9C12DD3B46500CA668D /* PokemonDemoApp.swift */,
 				FA7AF9C32DD3B46500CA668D /* ContentView.swift */,
+				FA7AF9FB2DD3C11F00CA668D /* Helpers */,
+				FA7AF9EE2DD3B67B00CA668D /* View */,
+				FA7AF9ED2DD3B67000CA668D /* ViewModels */,
+				FA7AF9EC2DD3B66500CA668D /* Models */,
 				FA7AF9C52DD3B46600CA668D /* Assets.xcassets */,
 				FA7AF9C72DD3B46600CA668D /* PokemonDemo.entitlements */,
 				FA7AF9C82DD3B46600CA668D /* Preview Content */,
@@ -129,6 +148,47 @@
 			path = PokemonDemoUITests;
 			sourceTree = "<group>";
 		};
+		FA7AF9EC2DD3B66500CA668D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AF9EF2DD3B6EA00CA668D /* PokemonResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7AF9ED2DD3B67000CA668D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AF9F32DD3B84F00CA668D /* PokemonViewModel.swift */,
+				FA7AFA012DD3E41700CA668D /* PokemonDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA7AF9EE2DD3B67B00CA668D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AF9F12DD3B80F00CA668D /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7AF9FB2DD3C11F00CA668D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AF9FC2DD3C13C00CA668D /* Constants.swift */,
+				FA8B58042DD50E2B00BDD4E1 /* StatProgressView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA7AF9FE2DD3D49200CA668D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +205,9 @@
 			dependencies = (
 			);
 			name = PokemonDemo;
+			packageProductDependencies = (
+				FA7AF9FF2DD3D49200CA668D /* Alamofire */,
+			);
 			productName = PokemonDemo;
 			productReference = FA7AF9BE2DD3B46500CA668D /* PokemonDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +280,9 @@
 				Base,
 			);
 			mainGroup = FA7AF9B52DD3B46500CA668D;
+			packageReferences = (
+				FA7AF9FA2DD3C0FC00CA668D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FA7AF9BF2DD3B46500CA668D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7AF9C42DD3B46500CA668D /* ContentView.swift in Sources */,
+				FA7AF9F42DD3B84F00CA668D /* PokemonViewModel.swift in Sources */,
+				FA7AF9F22DD3B80F00CA668D /* DetailView.swift in Sources */,
 				FA7AF9C22DD3B46500CA668D /* PokemonDemoApp.swift in Sources */,
+				FA7AFA022DD3E41700CA668D /* PokemonDetailViewModel.swift in Sources */,
+				FA8B58052DD50E2B00BDD4E1 /* StatProgressView.swift in Sources */,
+				FA7AF9F02DD3B6EA00CA668D /* PokemonResponse.swift in Sources */,
+				FA7AF9FD2DD3C13C00CA668D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +489,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PokemonDemo/PokemonDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -432,13 +506,14 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = np.com.ranjansitikhu.PokemonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -453,9 +528,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PokemonDemo/PokemonDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -468,13 +545,14 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = np.com.ranjansitikhu.PokemonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -609,6 +687,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA7AF9FA2DD3C0FC00CA668D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA7AF9FF2DD3D49200CA668D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA7AF9FA2DD3C0FC00CA668D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA7AF9B62DD3B46500CA668D /* Project object */;
 }
